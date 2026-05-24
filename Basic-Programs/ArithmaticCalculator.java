@@ -1,34 +1,44 @@
+//edited version
 import java.util.Scanner;
+class Calculator {
+    double firstNumber;
+    double secondNumber;
 
-public class SimpleCalculator {
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        
-        System.out.println("--- Simple Java Calculator ---");
-        System.out.print("Enter first number: ");
-        double num1 = sc.nextDouble();
-        
-        System.out.print("Enter second number: ");
-        double num2 = sc.nextDouble();
-        
-      ে//all calculation 
-        double sum = num1 + num2;
-        double diff = num1 - num2;
-        double mul = num1 * num2;
-        
-        System.out.println("\nResults:");
-        System.out.println("Addition: " + sum);
-        System.out.println("Subtraction: " + diff);
-        System.out.println("Multiplication: " + mul);
-        
-        // A small logic about division (a number cannot be divided by 0)
-        if (num2 != 0) {
-            double div = num1 / num2;
-            System.out.println("Division: " + div);
-        } else {
-            System.out.println("Division: Error! Cannot divide by zero.");
+    Calculator(double firstNumber,double secondNumber) {
+        this.firstNumber = firstNumber;
+        this.secondNumber = secondNumber;
+    }
+   public double addition() {
+        return this.firstNumber + this.secondNumber;
+   }
+    public double substraction() {
+        return this.firstNumber - this.secondNumber;
+    }
+    public double multiplication() {
+        return this.firstNumber * this.secondNumber;
+    }
+    public double division() {
+        if (this.secondNumber == 0) {
+            System.out.println("Syntax Error !");
+            return 0;
         }
-        
-        sc.close();
+        else {
+            return this.firstNumber / this.secondNumber;
+        }
+    }
+}
+public class Main {
+    public static void main (String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.print("Enter Your First Number : ");
+        double firstNumber = input.nextDouble();
+        System.out.print("Enter Your Second Number : ");
+        double secondNumber =input.nextDouble();
+        Calculator myCal = new Calculator(firstNumber,secondNumber);
+
+        System.out.println("Sum : " + myCal.addition());
+        System.out.println("Sub : " + myCal.substraction());
+        System.out.println("Mul : " + myCal.multiplication());
+        System.out.println("Div : " + myCal.division());
     }
 }
