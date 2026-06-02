@@ -25,6 +25,9 @@ Converts Celsius to Fahrenheit, demonstrating the implementation of mathematical
 ### 🔤 6. Vowel & Consonant Checker
 A string-based program that identifies alphabets and handles invalid inputs using character comparison logic.
 
+### 🧬 7. Inheritance
+I'm trying to explore **Multilevel Inheritance** by this project.
+
 ## 🛠️ Tech Stack
 - **Language:** Java 26+
 - **Input Handling:** Java Scanner Class
