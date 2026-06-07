@@ -27,6 +27,11 @@ A string-based program that identifies alphabets and handles invalid inputs usin
 
 ### 🧬 7. Inheritance
 I'm trying to explore **Multilevel Inheritance** by this project.
+### 🧬 ✏️ 8. Inheritance and Overriding
+Project Name : Animal System ; Trying to create a animal system using Inheritance and Overriding ( OOP )
+**Classes** : Animal Class , Cat Class , Dog Class and Panther Class ; 
+**Methods** name , food and makeSound ;
+
 
 ## 🛠️ Tech Stack
 - **Language:** Java 26+
